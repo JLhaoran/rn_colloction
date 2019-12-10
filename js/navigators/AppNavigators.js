@@ -16,6 +16,8 @@ import FlatListPage from  '../page/PageFlatList';
 import SwipeableFlatListPage from  '../page/PageSwipeableFlatList';
 import SectionListPage from  '../page/PageSectionList';
 import HomePage from  '../page/HomePage';
+import FetchDemoPage from  '../page/FetchDemoPage';
+import AsyncStorageDemoPage from  '../page/AsyncStorageDemoPage';
 
 
 
@@ -96,11 +98,23 @@ export const AppStackNavigator = createStackNavigator({
         }
     },
     SectionListPage: {
-    screen: SectionListPage,
+        screen: SectionListPage,
         navigationOptions: {//在这里定义每个页面的导航属性，静态配置
-        title: "This is SectionListPage",
+            title: "This is SectionListPage",
+        }
+    },
+    FetchDemoPage: {
+        screen: FetchDemoPage,
+        navigationOptions: {//在这里定义每个页面的导航属性，静态配置
+            title: "This is FetchDemoPage",
+        }
+    },
+    AsyncStorageDemoPage: {
+        screen: AsyncStorageDemoPage,
+        navigationOptions: {//在这里定义每个页面的导航属性，静态配置
+            title: "This is AsyncStorageDemoPage",
+        }
     }
-}
 }, {
     defaultNavigationOptions: {
         // header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar

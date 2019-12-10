@@ -87,6 +87,18 @@ export default class HomePage extends React.Component {
                     navigation.navigate('SectionListPage');
                 }}
             />
+            <Button
+                title="Go To FetchDemoPage"
+                onPress={() => {
+                    navigation.navigate('FetchDemoPage');
+                }}
+            />
+            <Button
+                title="Go To AsyncStorageDemoPage"
+                onPress={() => {
+                    navigation.navigate('AsyncStorageDemoPage');
+                }}
+            />
         </View>
     }
 }
