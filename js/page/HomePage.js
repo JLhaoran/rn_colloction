@@ -99,6 +99,12 @@ export default class HomePage extends React.Component {
                     navigation.navigate('AsyncStorageDemoPage');
                 }}
             />
+            <Button
+                title="Go To DataStoreDemoPage"
+                onPress={() => {
+                    navigation.navigate('DataStoreDemoPage');
+                }}
+            />
         </View>
     }
 }

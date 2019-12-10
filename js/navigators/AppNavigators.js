@@ -18,6 +18,7 @@ import SectionListPage from  '../page/PageSectionList';
 import HomePage from  '../page/HomePage';
 import FetchDemoPage from  '../page/FetchDemoPage';
 import AsyncStorageDemoPage from  '../page/AsyncStorageDemoPage';
+import DataStoreDemoPage from  '../page/DataStoreDemoPage';
 
 
 
@@ -113,6 +114,12 @@ export const AppStackNavigator = createStackNavigator({
         screen: AsyncStorageDemoPage,
         navigationOptions: {//在这里定义每个页面的导航属性，静态配置
             title: "This is AsyncStorageDemoPage",
+        }
+    },
+    DataStoreDemoPage: {
+        screen: DataStoreDemoPage,
+        navigationOptions: {//在这里定义每个页面的导航属性，静态配置
+            title: "This is DataStoreDemoPage",
         }
     }
 }, {
